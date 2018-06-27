@@ -13,3 +13,32 @@ inputEmail.addEventListener('input', () => {
         mailValido.innerText = 'Email incorrecto';
     }
 });
+
+//contraseña -> aceptar max 8 caracteres y solo números
+const inputPassword = document.getElementById('inputPassword6');
+
+
+
+
+/*
+//llamar API
+window.callData = (number) => {
+    return fetch (`http://www.psep.cl/api/Bip.php?&numberBip=${number}`)
+    .then ((answer) => {
+        if (answer.ok) {
+            return answer.json();
+        } else {
+            throw new Error ('la API falló');
+        }
+    }) .then ((answerJSON) => {
+        console.log(answerJSON);
+        return answerJSON;
+    }) .catch ((bug) => {
+        console.log(bug);
+    });
+};
+
+window.onload = () => {
+    callData(19420273);
+}
+*/
