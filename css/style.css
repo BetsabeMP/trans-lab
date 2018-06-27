@@ -1,1 +1,52 @@
-/* YeyeYeee código aquí */
+body {
+    background-color: #3c3c43;
+}
+/*Logo*/
+.icon {
+    height: 5rem;
+    margin-left: 2.5rem;
+    margin-top: 4rem;
+}
+.titleLogo {
+    text-align: center;
+    color: #f3ab04;
+    margin-left: 5rem;
+}
+
+/*Datos, email, contraseña, botón*/
+.form-group {
+    width: 17rem;
+    margin-left: -2rem;
+}
+
+.form-control {
+    border-radius: 0rem;
+}
+
+.squareData {
+    margin-top: 3rem;
+}
+
+.botonIniciarSesion {
+    background-color: #f3ab04;
+    color: #5a5f7a;
+    border: 0rem;
+    width: 17rem;
+    height: 2.5rem;
+}
+
+.textQuestion {
+    color: #fafafa;
+    margin-left: -2rem;
+}
+
+.textNoAccount {
+    color: #FAFAFA;
+    margin-left: -1.5rem;
+    margin-top: 3rem;
+    width: 16rem;
+}
+
+b {
+    color: #f3ab04;
+}
