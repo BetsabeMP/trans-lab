@@ -17,7 +17,10 @@ inputEmail.addEventListener('input', () => {
 //contraseña -> aceptar max 8 caracteres y solo números
 const inputPassword = document.getElementById('inputPassword6');
 
-
+inputPassword.addEventListener('input', function() {
+    if (this.value.length > 8)
+    this.value = this.value.slice(0,8);
+})
 
 
 /*
