@@ -38,6 +38,7 @@ window.writeOption = (options) => {
   </div>`; 
 let divOptions = document.getElementById('navbar');
 divOptions.innerHTML = optionsHTML;
+
 };
 
 //pasar a la sig sección
