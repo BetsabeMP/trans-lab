@@ -26,12 +26,13 @@ body {
     margin-top: 3rem;
 }
 
-.botonIniciarSesion {
+#botonIniciarSesion {
     background-color: #f3ab04;
     color: #5a5f7a;
     border: 0rem;
     width: 17rem;
     height: 2.5rem;
+    cursor: pointer;
 }
 
 .textQuestion {
@@ -79,7 +80,7 @@ b {
         width: 20.5rem;
         margin-left: 1.5rem;
     }
-    .botonIniciarSesion {
+    #botonIniciarSesion {
         width: 20.5rem;
     }
     .textQuestion {
@@ -102,7 +103,7 @@ b {
         width: 22.5rem;
         margin-left: 2rem;
     }
-    .botonIniciarSesion {
+    #botonIniciarSesion {
         width: 22.5rem;
     }
     .textQuestion {
