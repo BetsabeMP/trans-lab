@@ -6,42 +6,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>TransLab</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <div class="container-fluid"></div>
-  <div class="row" id="navbar">
-    <div class="col-6">
-      <img src="docs/imagen.png" class="icon" alt="logo">
+  <div class="container-fluid" id="navbar">
+    <div class="row">
+      <div class="col">
+        <img src="docs/imagen.png" class="icon" alt="logo">
+      </div>
     </div>
     <div class="titleLogo">
       <h2>TRANS-LAB</h2>
     </div>
   </div>
-  <div class="row squareData" id="rowDos">
-    <div class="col">
-      <form class="form-inline">
-        <div class="form-group">
-          <span id="emailOK"></span>
-          <input type="email" class="form-control" id="inputEmail4" placeholder="Correo electrónico">
-          <input type="number" min="1" max="9" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline" placeholder="Contraseña">
-          <button type="button" id="botonIniciarSesion">Iniciar Sesión</button>
-        </div>
-      </form>
+  <div class="container-fluid" id="rowDos">
+    <div class="row squareData">
+      <div class="col-sm">
+        <form>
+          <div class="form-group">
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Correo electrónico">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" id="inputPassword6" placeholder="Contraseña">
+          </div>
+          <div>
+              <button type="button" class="btn btn-orange" id="botonIniciarSesion">Iniciar Sesión</button>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox"> Recordar usuario</label>
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
-  <div class="row" id="rowTres">
-    <div class="col">
-      <p class="textQuestion">¿Olvidaste tu contraseña?</p>
+    <div class="row" id="rowTres">
+      <div class="col">
+        <p class="textQuestion">¿Olvidaste tu contraseña?</p>
+      </div>
     </div>
-  </div>
-  <div class="row" id="rowCuatro">
-    <div class="col">
-      <p class="textNoAccount">¿NO TIENES CUENTA? <b>REGÍSTRATE</b></p>
+    <div>
+      <p class="textNoAccount">¿NO TIENES CUENTA? <b>REGÍSTRATE</b><p>
     </div>
   </div>
 
@@ -55,6 +63,7 @@
     crossorigin="anonymous"></script>
 
   <script src="js/main.js"></script>
+  <script src="js/view.js"></script>
 </body>
 
 </html>
