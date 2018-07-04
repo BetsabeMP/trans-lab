@@ -60,20 +60,33 @@ b {
 }
 
 .optionsDos {
+    margin: 1rem;
+}
+
+.btnOptions {
+    width: 100%;
     color: #fafafa;
     background-color: #f3ab04;
-    margin: 1rem;
+    border: 0rem;
+    cursor: pointer;
 }
 
 .container-fluid {
     padding: 0rem;
 }
 
-.optionsnav {
+.btnNavbar {
     color: #fafafa;
+    border: 0rem;
+    background-color: #343a40;
+    cursor: pointer;
 }
 
 .checkbox {
+    color: #fafafa;
+}
+
+a {
     color: #fafafa;
 }
 

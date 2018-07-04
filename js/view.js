@@ -4,11 +4,21 @@ window.writeOption = (options) => {
     optionsHTML = optionsHTML + `<div class="pos-f-t">
     <div class="collapse" id="navbarToggleExternalContent">
       <div class="bg-dark p-4 optionsnav">
-        <div>Ver saldo</div>
-        <div>Calcular Tarifa</div>
-        <div>Perfil</div>
-        <div>Preguntas Frecuentes</div>
-        <div>Home</div>
+        <div>
+            <button type="button" class="btnNavbar">Ver saldo</button>
+        </div>
+        <div>
+            <button type="button" class="btnNavbar">Calcular Tarifa</button>
+        </div>
+        <div>
+            <button type="button" class="btnNavbar">Perfil</button>
+        </div>
+        <div>
+            <button type="button" class="btnNavbar">Preguntas Frecuentes</button>
+        </div>
+        <div>
+            <button type="button" class="btnNavbar">Home</button>
+        </div>
       </div>
     </div>
     <nav class="navbar navbar-dark bg-dark">
@@ -23,17 +33,17 @@ window.writeOption = (options) => {
 
     let optionsHTMLrowDos = '';
     optionsHTMLrowDos = optionsHTMLrowDos + `<div class="d-flex flex-sm-column optionsDos">
-    <p>VER SALDO</p>
-  </div>
-  <div class="d-flex flex-sm-column optionsDos">
-    <p>CALCULAR TARIFA</p> 
-  </div>
-  <div class="d-flex flex-sm-column optionsDos">
-    <p>PEFIL</p>
-  </div>
-  <div class="d-flex flex-sm-column optionsDos">
-    <p>PREGUNTAS FRECUENTES</p>
-  </div>`;
+    <button type="button" class="btnOptions">VER SALDO</button>
+</div>
+<div class="d-flex flex-sm-column optionsDos">
+    <button type="button" class="btnOptions">CALCULAR TARIFA</button>
+</div>
+<div class="d-flex flex-sm-column optionsDos">
+    <button type="button" class="btnOptions">PERFIL</button>
+</div>
+<div class="d-flex flex-sm-column optionsDos">
+    <button type="button" class="btnOptions">PREGUNTAS FRECUENTES</button>
+</div>`;
     let divOptionsrowDos = document.getElementById('rowDos');
     divOptionsrowDos.innerHTML = optionsHTMLrowDos;
 
