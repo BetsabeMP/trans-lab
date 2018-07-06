@@ -1,5 +1,5 @@
 //imprimir opciones
-window.writeOption = (options) => {
+window.writeOption = () => {
     let optionsHTML = '';
     optionsHTML = optionsHTML + `<div class="pos-f-t">
     <div class="collapse" id="navbarToggleExternalContent">
@@ -11,7 +11,7 @@ window.writeOption = (options) => {
             <button type="button" class="btnNavbar">Calcular Tarifa</button>
         </div>
         <div>
-            <button type="button" class="btnNavbar">Perfil</button>
+            <button type="button" class="btnNavbar" id="perfilnav">Perfil</button>
         </div>
         <div>
             <button type="button" class="btnNavbar">Preguntas Frecuentes</button>
@@ -39,7 +39,7 @@ window.writeOption = (options) => {
     <button type="button" class="btnOptions">CALCULAR TARIFA</button>
 </div>
 <div class="d-flex flex-sm-column optionsDos">
-    <button type="button" class="btnOptions">PERFIL</button>
+    <button type="button" class="btnOptions id="perfilOption">PERFIL</button>
 </div>
 <div class="d-flex flex-sm-column optionsDos">
     <button type="button" class="btnOptions">PREGUNTAS FRECUENTES</button>
@@ -49,29 +49,22 @@ window.writeOption = (options) => {
 
 };
 
-
-//validar Email
-window.validarEmail = (email) => {
-    const inputEmail = document.getElementById('inputEmail4');
-    inputEmail.addEventListener('input', () => {
-        outback =  event.target;
-        mailValido = document.getElementById('emailOK');
-
-    emailCharac = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
-
-    if (emailCharac.test(outback.value)) {
-        mailValido.innerText = 'Correcto';
-    } else {
-        mailValido.innerText = 'Email incorrecto';
-    }
+//llamar API
+window.callData = (number) => {
+    return fetch (`http://www.psep.cl/api/Bip.php?&numberBip=${number}`)
+    .then ((answer) => {
+        if (answer.ok) {
+            return answer.json();
+        } else {
+            throw new Error ('la API falló');
+        }
+    }) .then ((answerJSON) => {
+        console.log(answerJSON);
+        return answerJSON;
+    }) .catch ((bug) => {
+        console.log(bug);
     });
-}
+};
 
-//max 8 carácteres
-window.inputPass = (input) => {
-    const inputPassword = document.getElementById('inputPassword6');
-    inputPassword.addEventListener('input', function() {
-        if (this.value.length > 8)
-        this.value = this.value.slice(0,8);
-    });
-}
+
+
